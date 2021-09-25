@@ -1,0 +1,48 @@
+{
+    
+   
+    "stage":
+    [
+        {
+            "stage2":0,
+            "stage3":120,
+            "stage4":240,
+            "stage5":500
+        },
+        {
+            "stage2":0,
+            "stage3":120,
+            "stage4":240,
+            "stage5":500
+        },
+        {
+            "stage2":0,
+            "stage3":120,
+            "stage4":240,
+            "stage5":500
+        }
+        ,
+        {
+            "stage2":0,
+            "stage3":120,
+            "stage4":240,
+            "stage5":500
+        },
+        
+        {
+            "stage2":0,
+            "stage3":120,
+            "stage4":240,
+            "stage5":500
+        },
+        
+        {
+            "stage2":0,
+            "stage3":120,
+            "stage4":240,
+            "stage5":500
+        }
+       
+    ]
+
+}
