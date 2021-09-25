@@ -9,7 +9,7 @@ const userRouter = require("./routers/user.js");
 var server2 = require("http").createServer(app);
 var sio = require("socket.io").listen(server2); // it was require('socket.io')(server);
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 6000;
 
 app.use(express.json());
 app.use(userRouter);
