@@ -13,7 +13,7 @@ const Leaderboard = db.Leaderboard;
 const Verification = require("../models/verification.modal");
 
 router.post("/users/register", async (req, res) => {
-  console.log("game ends  " + req.body.deviceId);
+  console.log("game ghvhvvhvvhhv  " + req.body.deviceId);
   let user = await User.findOne({ deviceId: req.body.deviceId });
   if (user) {
     res.status(200).send({
