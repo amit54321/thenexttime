@@ -56,10 +56,19 @@ router.post("/users/setScore", async (req, res) => {
     if (!Array.isArray(leaderBoard.leaderBoard)) {
       leaderBoard.leaderBoard = [];
     }
-    let data = { id: req.body.id, score: req.body.score, name: user.name };
-    leaderBoard.leaderBoard.push(data);
-    leaderBoard.leaderBoard.sort(compareScore);
-    await leaderBoard.save();
+    let found = false;
+    for (let i = 0; i < leaderBoard.length; i++) {
+      if (leaderBoard.leaderBoard.id == req.body.id) {
+        found = true;
+        break;
+      }
+    }
+    if (!found) {
+      let data = { id: req.body.id, score: req.body.score, name: user.name };
+      leaderBoard.leaderBoard.push(data);
+      leaderBoard.leaderBoard.sort(compareScore);
+      await leaderBoard.save();
+    }
   }
 });
 function compareScore(a, b) {
