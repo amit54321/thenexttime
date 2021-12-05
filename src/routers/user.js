@@ -86,7 +86,7 @@ router.post("/users/getTimeline", async (req, res) => {
     lastLeaderboard = true;
   }
   if (timeLine) {
-    console.log(dateToday);
+    console.log(board["stage"][0]["stage2"]);
     console.log(user.lastTimelineDate);
     if (user.lastTimelineDate == dateToday) {
       res.status(200).send({
